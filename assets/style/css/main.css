@@ -226,6 +226,10 @@ header, main, footer {
           align-items: center;
 }
 
+.search-2 {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   .nav-bottom-links {
     display: none !important;
