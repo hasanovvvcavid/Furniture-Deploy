@@ -1,0 +1,96 @@
+.section-6{
+    @include flex;
+    margin-top: 30px;
+    .container{
+        @include flex (space-between);
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        .sofa{
+            position: relative;
+            .blur-4{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            img{
+                width: 100%;
+                
+            }
+            .sofa, .bed, .rug, .cushions{
+                position: absolute;
+                color: rgba(234, 230, 223, 1);
+
+            }
+            .sofa{
+                top: 79%;
+                left: 45%;
+            }
+            .bed{
+                top: 79%;
+                left: 24%;
+            }
+            .rug{
+                top: 80%;
+                left: 45%;
+            }
+            .cushions{
+                top: 80%;
+                left: 40%;
+            }
+            
+        }
+        
+    }
+}
+.section-6-title{
+    background-color: #E4DDD6;
+    margin-top: 100px;
+    h3{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        font-family: $fontDidot;
+        margin-left: 30px;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    .section-6{
+        .container{
+            .sofa{
+                width: 75%;
+
+                .bed{
+                    left: 35%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 465px) {
+    .section-6{
+        .container{
+            .sofa{
+                
+
+                .bed{
+                    left: 20%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    .section-6{
+        .container{
+            .sofa{
+                
+
+                .bed{
+                    left: 10%;
+                }
+            }
+        }
+    }
+}

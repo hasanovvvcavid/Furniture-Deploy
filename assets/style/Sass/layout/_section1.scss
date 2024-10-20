@@ -1,0 +1,146 @@
+.section-1{
+    @include flex (center, flex-start);
+
+    .container{
+        @include flex;
+        position: relative;
+
+    .content{
+
+        .section-1-title{
+            position: absolute;
+            top: 12%;
+            left: 0;
+            width: 55%;
+
+        }
+
+        .content-text{
+            margin-top: 50px;
+            p{
+                font-family: $fontRaleway;
+                line-height: 24px;
+            }
+
+            .button-brown{ 
+                margin-top: 50px;
+                @include flex;
+                width: 70.9%;
+                height: 54px;
+                background-color: $buttonColor;
+                gap: 30px;
+                font-family: $fontRaleway;
+
+                a{
+                    color: rgba(234, 230, 223, 1);
+                }
+            }
+        }
+        
+    }
+    .section-1-image {
+        width: 100%;
+        height: 100%;
+        
+
+        .origin-room{
+            display: none;
+            
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        
+
+    }
+    
+    .blur-livingroom {
+        z-index: 15;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 33%;
+        height: 100%;
+        filter: blur(10px);
+    }
+    
+
+}
+}
+
+@media only screen and (max-width: 1395px) {
+    .section-1{
+        height: auto;
+    }
+    .section-1-title{
+        position: static !important;
+        width: 95% !important;
+        h1{
+            font-size: 60px !important;
+            line-height: 80px !important;
+            object-fit: contain !important;
+        }
+    }
+    .section-1-image{
+        position: static !important;
+        img{
+            object-fit: contain !important;
+
+        }
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .section-1-title{
+        h1{
+        font-size: 50px !important;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .section-1-title{
+        h1{
+        font-size: 35px !important;
+
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .section-1-title{
+        h1{
+            line-height: 50px !important;
+        font-size: 32px !important;
+
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .section-1{
+        
+        .container{
+            flex-direction: column !important;
+
+            .button-brown{
+                margin: auto;
+                width: 90% !important;
+            }
+        }
+    }
+    .blur-room{
+        display: none !important;
+    }
+    .origin-room{
+        display: block !important;
+        margin-top: 40px;
+    }
+
+    .content-text{
+
+        margin: 0 !important;
+    }
+}

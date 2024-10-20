@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.nav{
+    .nav-top{
+        .nav-top-lang{
+            gap: 30px;
+        }
+
+        .nav-top-title{
+
+            h2{
+                font-size: 36px;
+                font-weight: 400;
+                font-family: $fontDidot;
+                color: $textblacklColor;
+            }
+
+        }
+
+        .nav-top-user{
+            gap: 30px;
+        }
+    }
+
+    .nav-bottom{
+        width: 100%;
+        @include flex;
+        height: 80px;
+        
+
+        .nav-bottom-links{
+            a{
+                color: $textblacklColor;
+                font-family: $fontRaleway;
+            }
+        }
+    }
+}
+
+.section-1{
+    .section-1-title{
+        z-index: 1;
+        
+        h1{
+            font-family: $fontDidot;
+            font-weight: 700;
+            font-size: 72px;
+            color: $textblacklColor;
+            line-height: 86px;
+            object-fit: contain;
+        }
+    }
+}

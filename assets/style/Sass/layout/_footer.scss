@@ -1,0 +1,129 @@
+.footer{
+    @include flex;
+    margin-top: 100px;
+    .contact-title{
+        h3{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 52px;
+            font-family: $fontDidot;
+        }
+    }
+    .form{
+        width: 100%;
+        @include flex (space-between);
+        gap: 40px;
+        .form-input{
+            width: 90%;
+            @include flex (center,flex-start);
+            flex-direction: column;
+
+            input, textarea{
+                margin-bottom: 15px;
+                width: 80%;
+                height: 54px;
+                background-color: $bgColor;
+                border: 1px solid #D4C8BE;
+                outline: none;
+                border-radius: 10px;
+                color: rgba(176, 176, 176, 1);
+                font-family: $fontRaleway;
+                font-weight: 500;
+                line-height: 20px;
+        
+
+
+            }
+
+
+            button{
+                width: 80%;
+                height: 54px;
+                background-color: $buttonColor;
+                border: none;
+                color: rgba(234, 230, 223, 1);
+                border-radius: 10px;
+            }
+        }
+        .contact-image{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .form{
+        flex-direction: column !important;
+        
+        .contact-image{
+            margin-top: 40px;
+        }
+    }
+}
+
+input, textarea, button{
+    width: 100% !important;
+}
+
+.footer-last{
+    padding-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    .container{
+
+        @include flex(space-between, flex-start);
+
+    .footer-last-title{
+        width: 40%;
+        @include flex;
+        flex-direction: column;
+
+        h1{
+            font-weight: 400;
+            font-size: 52.2px;
+            line-height: 58px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+    .footer-last-description{
+        @include flex(space-between);
+        width: 56%;
+        
+        
+
+        p{
+            line-height: 24px;
+        }
+
+    }
+}
+}
+@media only screen and (max-width: 900px) {
+    .footer-last{
+       
+        .container{
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .footer-last-title{
+                width: 100%;
+            }
+
+            .footer-last-description{
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+    }
+}
+

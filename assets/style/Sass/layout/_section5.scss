@@ -1,0 +1,122 @@
+.section-5{
+    width: 100%;
+    margin-top: 100px;
+    
+    .container{
+
+        .products{
+         
+            width: 100%;
+
+            .products-title{
+                
+                width: 100%;
+                @include flex (space-between);
+
+                h3{
+                    font-weight: 700;
+                    font-size: 48px;
+                    font-family: $fontDidot;
+                    line-height: 52px;
+                }
+                p{
+                    color: $buttonColor;
+                    text-decoration: underline;
+                }
+                a{
+                    color: $buttonColor;
+                }
+            }
+            .products-card{
+                
+                margin-top: 59px;
+                width: 100%;
+                @include flex ();
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .card{
+                    position: relative;
+
+                    .cardimage{
+                        
+                       width: 100%;
+                       height: 100%;
+                       object-fit: contain  ;
+                        
+                    }
+                    .heart{
+                        position: absolute;
+                        top: 5% ;
+                        left: 85%;
+                        z-index: 5;
+                    }
+
+                    .card-content{
+                        p{
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 28px;
+                            font-family: $fontRaleway;
+                            margin-top: 20px;
+                            padding-bottom: 20px;
+                        }
+                        span{
+                            color: $buttonColor;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 28px;
+                            
+                        }
+                    }
+                
+            }
+        }
+    }
+    }
+}
+
+.section-5{
+    @include flex;
+    margin-top: 30px;
+    .container{
+        @include flex (space-between);
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        .sofa{
+            position: relative;
+            .blur-4{
+                position: absolute;
+                top: 70%;
+                left: 0;
+            }
+            .sofa, .bed, .rug, .cushions{
+                position: absolute;
+                color: rgba(234, 230, 223, 1);
+
+            }
+            .sofa{
+                top: 79%;
+                left: 45%;
+            }
+            .bed{
+                top: 79%;
+                left: 24%;
+            }
+            .rug{
+                top: 80%;
+                left: 45%;
+            }
+            .cushions{
+                top: 80%;
+                left: 40%;
+            }
+            
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 700px) {
+}

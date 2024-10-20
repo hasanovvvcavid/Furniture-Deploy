@@ -1,0 +1,1211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #EAE6DF;
+}
+
+.container {
+  width: 95.8%;
+}
+
+header, main, footer {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.nav .nav-top .nav-top-lang {
+  gap: 30px;
+}
+
+.nav .nav-top .nav-top-title h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "GFS Didot", serif;
+  color: #2d2d2b;
+}
+
+.nav .nav-top .nav-top-user {
+  gap: 30px;
+}
+
+.nav .nav-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+}
+
+.nav .nav-bottom .nav-bottom-links a {
+  color: #2d2d2b;
+  font-family: "Raleway", sans-serif;
+}
+
+.section-1 .section-1-title {
+  z-index: 1;
+}
+
+.section-1 .section-1-title h1 {
+  font-family: "GFS Didot", serif;
+  font-weight: 700;
+  font-size: 72px;
+  color: #2d2d2b;
+  line-height: 86px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.nav {
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav .nav-top {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav .nav-top .nav-top-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav .nav-top .nav-top-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav .nav-top .nav-top-user .bars {
+  display: none;
+}
+
+.nav .nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+}
+
+.nav .nav-bottom .nav-bottom-links {
+  width: 51.7%;
+}
+
+.nav .nav-bottom .nav-bottom-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-bottom-links {
+    display: none !important;
+  }
+  .bars {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  .nav-top-title {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    width: 100%;
+  }
+  .user, .market, .lang, .search {
+    display: none !important;
+  }
+  .search-2 {
+    display: block !important;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+}
+
+.footer .contact-title h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  font-family: "GFS Didot", serif;
+}
+
+.footer .form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px;
+}
+
+.footer .form .form-input {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: column;
+}
+
+.footer .form .form-input input, .footer .form .form-input textarea {
+  margin-bottom: 15px;
+  width: 80%;
+  height: 54px;
+  background-color: #EAE6DF;
+  border: 1px solid #D4C8BE;
+  outline: none;
+  border-radius: 10px;
+  color: #b0b0b0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.footer .form .form-input button {
+  width: 80%;
+  height: 54px;
+  background-color: #b8926a;
+  border: none;
+  color: #eae6df;
+  border-radius: 10px;
+}
+
+.footer .form .contact-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media only screen and (max-width: 700px) {
+  .form {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .form .contact-image {
+    margin-top: 40px;
+  }
+}
+
+input, textarea, button {
+  width: 100% !important;
+}
+
+.footer-last {
+  padding-bottom: 50px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.footer-last .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-last .container .footer-last-title {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: column;
+}
+
+.footer-last .container .footer-last-title h1 {
+  font-weight: 400;
+  font-size: 52.2px;
+  line-height: 58px;
+}
+
+.footer-last .container .footer-last-title p {
+  margin-top: 20px;
+}
+
+.footer-last .container .footer-last-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 56%;
+}
+
+.footer-last .container .footer-last-description p {
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-last .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer-last .container .footer-last-title {
+    width: 100%;
+  }
+  .footer-last .container .footer-last-description {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.section-1 .container .content .section-1-title {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 55%;
+}
+
+.section-1 .container .content .content-text {
+  margin-top: 50px;
+}
+
+.section-1 .container .content .content-text p {
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+}
+
+.section-1 .container .content .content-text .button-brown {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70.9%;
+  height: 54px;
+  background-color: #b8926a;
+  gap: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.section-1 .container .content .content-text .button-brown a {
+  color: #eae6df;
+}
+
+.section-1 .container .section-1-image {
+  width: 100%;
+  height: 100%;
+}
+
+.section-1 .container .section-1-image .origin-room {
+  display: none;
+}
+
+.section-1 .container .section-1-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-1 .container .blur-livingroom {
+  z-index: 15;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 33%;
+  height: 100%;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+@media only screen and (max-width: 1395px) {
+  .section-1 {
+    height: auto;
+  }
+  .section-1-title {
+    position: static !important;
+    width: 95% !important;
+  }
+  .section-1-title h1 {
+    font-size: 60px !important;
+    line-height: 80px !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+  .section-1-image {
+    position: static !important;
+  }
+  .section-1-image img {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .section-1-title h1 {
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-1-title h1 {
+    font-size: 35px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section-1-title h1 {
+    line-height: 50px !important;
+    font-size: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .section-1 .container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .section-1 .container .button-brown {
+    margin: auto;
+    width: 90% !important;
+  }
+  .blur-room {
+    display: none !important;
+  }
+  .origin-room {
+    display: block !important;
+    margin-top: 40px;
+  }
+  .content-text {
+    margin: 0 !important;
+  }
+}
+
+.section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+}
+
+.section-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-2 .container .sofa {
+  position: relative;
+}
+
+.section-2 .container .sofa .blur-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.section-2 .container .sofa img {
+  width: 100%;
+}
+
+.section-2 .container .sofa .sofa, .section-2 .container .sofa .bed, .section-2 .container .sofa .rug, .section-2 .container .sofa .cushions {
+  position: absolute;
+  color: #eae6df;
+}
+
+.section-2 .container .sofa .sofa {
+  top: 79%;
+  left: 45%;
+}
+
+.section-2 .container .sofa .bed {
+  top: 79%;
+  left: 24%;
+}
+
+.section-2 .container .sofa .rug {
+  top: 80%;
+  left: 45%;
+}
+
+.section-2 .container .sofa .cushions {
+  top: 80%;
+  left: 40%;
+}
+
+@media only screen and (max-width: 700px) {
+  .section-2 .container .sofa {
+    width: 75%;
+  }
+  .section-2 .container .sofa .bed {
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .section-2 .container .sofa .bed {
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .section-2 .container .sofa .bed {
+    left: 10%;
+  }
+}
+
+.section-3 {
+  margin-top: 120px;
+}
+
+.section-3 .container .about-title h3 {
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "GFS Didot", serif;
+}
+
+.section-3 .container .about {
+  gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 40px;
+}
+
+.section-3 .container .about .about-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-3 .container .about .about-content {
+  width: 40%;
+}
+
+.section-3 .container .about .about-content p {
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+}
+
+.section-3 .container .about .about-content .second-p {
+  margin-top: 20px;
+}
+
+.section-3 .container .about .about-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+  width: 60.9%;
+  height: 54px;
+  background-color: #b8926a;
+  gap: 30px;
+  font-family: "Raleway", sans-serif;
+  border: 1px solid #b8926a;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.section-3 .container .about .about-button a {
+  color: #b8926a;
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .about .about-content {
+    width: 100% !important;
+    margin-left: 20px;
+  }
+  .about .about-content .about-button {
+    width: 100% !important;
+  }
+}
+
+.section-4 {
+  margin-top: 100px;
+  width: 100%;
+  height: 367px;
+  background-image: url(/assets/images/section4/discount.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-4 .discount-content {
+  width: 100%;
+  height: 369px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: column;
+}
+
+.section-4 .discount-content .discount-title {
+  color: white;
+}
+
+.section-4 .discount-content .discount-title h2 {
+  font-family: "GFS Didot", serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 52px;
+}
+
+.section-4 .discount-content .discount-description {
+  margin-top: 30px;
+  width: 50%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  line-height: 24px;
+  color: white;
+}
+
+.section-4 .discount-content .discount-button {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 25.9%;
+  height: 54px;
+  background-color: #b8926a;
+  gap: 30px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+}
+
+.section-4 .discount-content .discount-button a {
+  color: #eae6df;
+}
+
+@media only screen and (max-width: 900px) {
+  .section-4 {
+    margin-top: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .section-4 .discount-button {
+    width: 70% !important;
+  }
+  .section-4 .discount-description {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .section-4 .discount-title h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .section-4 .discount-description {
+    width: 90% !important;
+  }
+  .section-4 .discount-button {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 338px) {
+  .section-4 {
+    margin-top: 150px !important;
+  }
+}
+
+@media only screen and (max-width: 296px) {
+  .section-4 {
+    margin-top: 150px !important;
+  }
+}
+
+.section-5 {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.section-5 .container .products {
+  width: 100%;
+}
+
+.section-5 .container .products .products-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-5 .container .products .products-title h3 {
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "GFS Didot", serif;
+  line-height: 52px;
+}
+
+.section-5 .container .products .products-title p {
+  color: #b8926a;
+  text-decoration: underline;
+}
+
+.section-5 .container .products .products-title a {
+  color: #b8926a;
+}
+
+.section-5 .container .products .products-card {
+  margin-top: 59px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-5 .container .products .products-card .card {
+  position: relative;
+}
+
+.section-5 .container .products .products-card .card .cardimage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-5 .container .products .products-card .card .heart {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  z-index: 5;
+}
+
+.section-5 .container .products .products-card .card .card-content p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-5 .container .products .products-card .card .card-content span {
+  color: #b8926a;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.section-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+}
+
+.section-5 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-5 .container .sofa {
+  position: relative;
+}
+
+.section-5 .container .sofa .blur-4 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+}
+
+.section-5 .container .sofa .sofa, .section-5 .container .sofa .bed, .section-5 .container .sofa .rug, .section-5 .container .sofa .cushions {
+  position: absolute;
+  color: #eae6df;
+}
+
+.section-5 .container .sofa .sofa {
+  top: 79%;
+  left: 45%;
+}
+
+.section-5 .container .sofa .bed {
+  top: 79%;
+  left: 24%;
+}
+
+.section-5 .container .sofa .rug {
+  top: 80%;
+  left: 45%;
+}
+
+.section-5 .container .sofa .cushions {
+  top: 80%;
+  left: 40%;
+}
+
+.section-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+}
+
+.section-6 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-6 .container .sofa {
+  position: relative;
+}
+
+.section-6 .container .sofa .blur-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.section-6 .container .sofa img {
+  width: 100%;
+}
+
+.section-6 .container .sofa .sofa, .section-6 .container .sofa .bed, .section-6 .container .sofa .rug, .section-6 .container .sofa .cushions {
+  position: absolute;
+  color: #eae6df;
+}
+
+.section-6 .container .sofa .sofa {
+  top: 79%;
+  left: 45%;
+}
+
+.section-6 .container .sofa .bed {
+  top: 79%;
+  left: 24%;
+}
+
+.section-6 .container .sofa .rug {
+  top: 80%;
+  left: 45%;
+}
+
+.section-6 .container .sofa .cushions {
+  top: 80%;
+  left: 40%;
+}
+
+.section-6-title {
+  background-color: #E4DDD6;
+  margin-top: 100px;
+}
+
+.section-6-title h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  font-family: "GFS Didot", serif;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .section-6 .container .sofa {
+    width: 75%;
+  }
+  .section-6 .container .sofa .bed {
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .section-6 .container .sofa .bed {
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .section-6 .container .sofa .bed {
+    left: 10%;
+  }
+}

@@ -1,0 +1,64 @@
+.nav{
+    height: 140px;
+    @include flex (center, flex-start);
+
+    .nav-top{
+        height: 60px;
+        @include flex(space-between);
+
+        .nav-top-lang{
+            @include flex;
+            
+        }
+
+        .nav-top-user{
+            @include flex;
+
+            .bars{
+                display: none;
+            }
+            
+        }
+    }
+
+
+    .nav-bottom{
+        @include flex;
+        height: 80px;
+        
+
+        .nav-bottom-links{
+            width: 51.7%;
+            
+            
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .nav-bottom-links{
+        display: none !important;
+    }
+    .bars{
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 478px){
+
+    .nav-top-title{
+        justify-content: space-between !important;
+        width: 100%;
+    }
+    .user, .market, .lang, .search{
+        display: none !important;
+    }
+    .search-2{
+        display: block !important;
+    }
+}
