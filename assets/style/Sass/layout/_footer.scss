@@ -17,9 +17,10 @@
             width: 90%;
             @include flex (center,flex-start);
             flex-direction: column;
+            margin-top: 40px;
 
             input, textarea{
-                margin-bottom: 15px;
+                margin-bottom: 20px;
                 width: 80%;
                 height: 54px;
                 background-color: $bgColor;
@@ -30,10 +31,17 @@
                 font-family: $fontRaleway;
                 font-weight: 500;
                 line-height: 20px;
+                padding-left: 15px;
         
 
 
             }
+
+            textarea{
+                height: 110px;
+            }
+
+        
 
 
             button{
@@ -100,6 +108,7 @@ input, textarea, button{
 
         p{
             line-height: 24px;
+            margin-top: 20px;
         }
 
     }
